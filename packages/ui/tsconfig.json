@@ -1,5 +1,5 @@
 {
-  "extends": "@pinshot-frontend/typescript-config/react-library.json",
+  "extends": "@pinshot/typescript-config/react-library.json",
   "compilerOptions": {
     "outDir": "dist"
   },

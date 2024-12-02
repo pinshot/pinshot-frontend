@@ -1,0 +1,19 @@
+pinshot.local {
+  reverse_proxy core:3000
+
+  tls internal
+}
+
+
+inbox.pinshot.local {
+  reverse_proxy notification:3000
+
+  tls internal
+}
+
+
+auth.pinshot.local {
+  reverse_proxy user-gateway:3000
+
+  tls internal
+}

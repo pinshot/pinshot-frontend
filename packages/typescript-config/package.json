@@ -1,5 +1,5 @@
 {
-  "name": "@pinshot-frontend/typescript-config",
+  "name": "@pinshot/typescript-config",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
