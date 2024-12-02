@@ -1,19 +1,19 @@
-pinshot.local {
+{
+  # debug
+}
+
+https://pinshot.local {
+  tls /etc/caddy/cert/cert.pem /etc/caddy/cert/key.pem
   reverse_proxy core:3000
-
-  tls internal
 }
 
-
-inbox.pinshot.local {
+https://inbox.pinshot.local {
+  tls /etc/caddy/cert/cert.pem /etc/caddy/cert/key.pem
   reverse_proxy notification:3000
-
-  tls internal
 }
 
-
-auth.pinshot.local {
+https://auth.pinshot.local {
+  tls /etc/caddy/cert/cert.pem /etc/caddy/cert/key.pem
   reverse_proxy user-gateway:3000
-
-  tls internal
 }
+

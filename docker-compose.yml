@@ -48,6 +48,7 @@ services:
       - '80:80'
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./.cert:/etc/caddy/cert:ro
     depends_on:
       - core
       - user-gateway
