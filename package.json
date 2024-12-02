@@ -7,12 +7,14 @@
     "lint": "turbo lint",
     "format:check": "prettier . --check",
     "format:write": "prettier . --write",
+    "check-types": "turbo check-types",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "husky": "^8.0.0",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.2.5",
     "turbo": "2.3.2",
     "typescript": "5.5.4"
